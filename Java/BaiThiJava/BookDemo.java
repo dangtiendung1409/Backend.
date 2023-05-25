@@ -2,8 +2,8 @@ package BaiThiJava;
 
 public class BookDemo {
     public static void main(String[] args) {
-        Author author = new Author("Tiến", "Dũng");
-        Book book = new Book("Một thế giới mới", author, 77.77);
+        Author author = new Author("Russel", "Winder");
+        Book book = new Book("Developing Java Software", author, 79.75);
         System.out.println(book.toString());
     }
 }
