@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo10.HomeController1">
+   <children>
+      <Text layoutX="233.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catagory" textAlignment="CENTER" wrappingWidth="134.21630859375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="21.0" layoutY="87.0" prefHeight="49.0" prefWidth="160.0" promptText="Tên sản phẩm" />
+      <TextField fx:id="txtPrice" layoutX="21.0" layoutY="150.0" prefHeight="49.0" prefWidth="160.0" promptText="Giá" />
+      <TextField fx:id="txtQuantity" layoutX="21.0" layoutY="217.0" prefHeight="49.0" prefWidth="160.0" promptText="Số lượng" />
+      <ListView fx:id="myListView" layoutX="250.0" layoutY="86.0" prefHeight="283.0" prefWidth="315.0" />
+      <Button fx:id="infoTextFlow" layoutX="147.0" layoutY="380.0" mnemonicParsing="false" onAction="#Submit" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: blue;" styleClass="red" text="Submit" textFill="WHITE" />
+      <Button fx:id="infoTextFlow2" layoutX="490.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: red;" styleClass="red" text="Xoá" textFill="WHITE" />
+      <Button fx:id="infoTextFlow1" layoutX="400.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: green;" styleClass="red" text="Sửa" textFill="WHITE" />
+
+      <TextArea fx:id="txtComment" layoutX="21.0" layoutY="276.0" prefHeight="90.0" prefWidth="200.0" promptText="Mô tả sản phẩm...." />
+      <ComboBox fx:id="combobox" layoutX="21.0" layoutY="43.0" prefHeight="28.0" prefWidth="150.0" />
+      <TextField alignment="TOP_LEFT" layoutX="250.0" layoutY="44.0" prefHeight="27.0" prefWidth="246.0" promptText="Nhập tên sản phẩm......" />
+
+      <Button fx:id="btnReturn" layoutX="46.0" layoutY="380.0" mnemonicParsing="false" onAction="#returnToList" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: orange;" styleClass="red" text="Return" textFill="WHITE" />
+
+
+      <Button fx:id="btnSearch" layoutX="500.0" layoutY="43.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: blue;" text="Search" textFill="WHITE" />
+   </children>
+</Pane>

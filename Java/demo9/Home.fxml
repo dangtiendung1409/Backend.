@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo9.HomeController">
+   <children>
+      <Text layoutX="160.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helloworld" textAlignment="CENTER" wrappingWidth="280.92919921875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="infoTextFlow" layoutX="118.0" layoutY="315.0" mnemonicParsing="false" onAction="#submit" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: blue;" styleClass="red" text="Submit" textFill="WHITE" />
+      <TextField fx:id="txtName" layoutX="34.0" layoutY="104.0" prefHeight="51.0" prefWidth="160.0" promptText=" Name" />
+      <TextField fx:id="txtEmail" layoutX="34.0" layoutY="175.0" prefHeight="51.0" prefWidth="160.0" promptText="Email" />
+      <TextField fx:id="txtTelephone" layoutX="34.0" layoutY="246.0" prefHeight="51.0" prefWidth="160.0" promptText="Telephone" />
+      <ListView fx:id="myListView" layoutX="250.0" layoutY="100.0" prefHeight="200.0" prefWidth="303.0" />
+
+      <Text fx:id="txtOut" layoutX="362.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="176.21630859375">
+
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="infoTextFlow1" layoutX="384.0" layoutY="315.0" mnemonicParsing="false" onAction="#editSelectedItem" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: green;" styleClass="red" text="Sửa" textFill="WHITE" />
+      <Button fx:id="infoTextFlow2" layoutX="478.0" layoutY="315.0" mnemonicParsing="false" onAction="#deleteSelectedItem" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: red;" styleClass="red" text="Xoá" textFill="WHITE" />
+      <Button fx:id="btnReturn" layoutX="34.0" layoutY="315.0" mnemonicParsing="false" onAction="#returnToList" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: orange;" text="Return" textFill="WHITE" />
+
+
+      <TextField fx:id="txtSearch" layoutX="250.0" layoutY="55.0" prefHeight="30.0" prefWidth="237.0" promptText="Nhập thông tin...." />
+      <Button fx:id="btnSearch" layoutX="492.0" layoutY="55.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: blue;" text="Search" textFill="WHITE" />
+      <DatePicker fx:id="datePicker" layoutX="34.0" layoutY="50.0" prefWidth="160.0"/>
+
+   </children>
+</Pane>
